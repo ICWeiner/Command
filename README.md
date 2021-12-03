@@ -1,2 +1,3 @@
 # Command
-Lab 6
+Lab 6 LDTS
+Diogo Filipe Nunes
