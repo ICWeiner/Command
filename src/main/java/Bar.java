@@ -9,10 +9,6 @@ public abstract class Bar {
         observers = new ArrayList<>();
     }
 
-    public Bar (List<BarObserver> observers){
-        this.observers = observers;
-    }
-
     public boolean isHappyHour() {
         return happyHour;
     };
