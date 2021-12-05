@@ -20,11 +20,17 @@ public class SmartStrategy implements OrderingStrategy{
 
     @Override
     public void happyHourStarted(StringBar bar) {
-
+        happyHour = true;
+        while (happyHour && barList.size() > 0){
+            this.wants(drinkList.get(0),recipeList.get(0),barList.get(0));
+            drinkList.remove(0);
+            recipeList.remove(0);
+            barList.remove(0);
+        }
     }
 
     @Override
     public void happyHourEnded(StringBar bar) {
-
+        happyHour = false;
     }
 }

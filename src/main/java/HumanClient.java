@@ -12,11 +12,11 @@ public class HumanClient implements Client{
 
     @Override
     public void happyHourStarted(Bar bar) {
-        strat.happyHourStarted();
+        strat.happyHourStarted((StringBar) bar);
     }
 
     @Override
     public void happyHourEnded(Bar bar) {
-        strat.happyHourEnded();
+        strat.happyHourEnded((StringBar) bar);
     }
 }
